@@ -424,6 +424,8 @@ ul.clean {
 
 .table-wrap {
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
 }
 
 table {
@@ -552,5 +554,218 @@ tbody tr:hover {
   .timeline-card,
   .source-card {
     padding: 22px;
+  }
+
+  .metric-box strong,
+  .stat-value {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 720px) {
+  body {
+    font-size: 15px;
+  }
+
+  .page-shell {
+    width: min(calc(100% - 20px), var(--content));
+  }
+
+  .topbar {
+    position: static;
+  }
+
+  .topbar-inner {
+    gap: 12px;
+    padding: 12px 0;
+  }
+
+  .brand-title {
+    font-size: 16px;
+  }
+
+  .nav-links {
+    width: 100%;
+    gap: 8px;
+  }
+
+  .nav-links a {
+    padding: 8px 10px;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+  }
+
+  .hero {
+    padding: 24px 0 12px;
+  }
+
+  .hero-card,
+  .panel,
+  .timeline-card,
+  .source-card,
+  .stat-card,
+  .note-card {
+    padding: 18px;
+  }
+
+  .hero h1 {
+    font-size: clamp(28px, 9vw, 40px);
+    line-height: 1.14;
+  }
+
+  .hero p.lead,
+  .section-head p,
+  .panel p,
+  .panel li,
+  .timeline-card p,
+  .timeline-card li,
+  .table-card p,
+  .source-card li,
+  .note-card p {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .section-head h2 {
+    font-size: 24px;
+    padding-bottom: 8px;
+  }
+
+  .section-head h2::after {
+    width: 56px;
+  }
+
+  .eyebrow {
+    font-size: 11px;
+    padding: 7px 10px;
+  }
+
+  .hero-tags,
+  .chip-row {
+    gap: 8px;
+    margin-top: 18px;
+  }
+
+  .tag,
+  .chip {
+    font-size: 12px;
+    padding: 7px 10px;
+  }
+
+  .metric-strip,
+  .timeline,
+  .hero-side {
+    gap: 12px;
+  }
+
+  .metric-box,
+  .matrix-item {
+    padding: 16px;
+  }
+
+  .metric-box strong,
+  .stat-value {
+    font-size: 28px;
+  }
+
+  th,
+  td {
+    padding: 14px 14px;
+    font-size: 13px;
+  }
+
+  table {
+    min-width: 700px;
+  }
+
+  section {
+    padding: 14px 0 12px;
+  }
+
+  .footer {
+    padding: 24px 0 40px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-shell {
+    width: min(calc(100% - 16px), var(--content));
+  }
+
+  .topbar-inner {
+    padding: 10px 0;
+  }
+
+  .brand-kicker {
+    font-size: 11px;
+    letter-spacing: 0.14em;
+  }
+
+  .brand-title {
+    font-size: 15px;
+  }
+
+  .nav-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  .nav-links a {
+    text-align: center;
+    width: 100%;
+    padding: 8px 8px;
+    font-size: 11px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero p.lead {
+    font-size: 16px;
+  }
+
+  .eyebrow {
+    display: inline-block;
+    line-height: 1.5;
+  }
+
+  .hero-card::before {
+    width: 4px;
+  }
+
+  .stat-card,
+  .metric-box,
+  .matrix-item,
+  .panel,
+  .timeline-card,
+  .source-card,
+  .note-card {
+    padding: 16px;
+  }
+
+  .stat-label,
+  .timeline-step {
+    font-size: 11px;
+  }
+
+  .metric-box strong,
+  .stat-value {
+    font-size: 26px;
+  }
+
+  ul.clean {
+    padding-left: 16px;
+  }
+
+  th,
+  td {
+    padding: 12px 12px;
+  }
+
+  table {
+    min-width: 620px;
   }
 }
