@@ -102,6 +102,13 @@ a {
   background: rgba(15, 111, 255, 0.08);
 }
 
+.nav-links a.lang-link {
+  font-weight: 700;
+  color: var(--brand);
+  border-color: rgba(15, 111, 255, 0.14);
+  background: rgba(15, 111, 255, 0.05);
+}
+
 .hero {
   padding: 52px 0 24px;
 }
